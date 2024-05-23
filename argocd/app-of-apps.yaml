@@ -10,7 +10,7 @@ spec:
     path: .
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: dos
+    namespace: default
   syncPolicy:
     automated:
       prune: true
