@@ -7,7 +7,7 @@ spec:
   source:
     repoURL: 'https://github.com/FrancisRSweb/argo.git'
     targetRevision: HEAD
-    path: my-app
+    path: .
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: dos
