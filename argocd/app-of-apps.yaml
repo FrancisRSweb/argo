@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/FrancisRSweb/argo'
+    repoURL: 'https://github.com/FrancisRSweb/argo.git'
     targetRevision: HEAD
     path: my-app
   destination:
