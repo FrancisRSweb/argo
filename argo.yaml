@@ -16,3 +16,24 @@ spec:
     automated:
       prune: true
       selfHeal: true
+  template:
+    metadata:
+      name: app-of-apps
+      namespace: argocd
+    spec:
+      applications:
+        - name: app1
+          project: default
+          source:
+            repoURL: 'https://github.com/FrancisRSweb/argo.git'
+            path: 'app1'
+            targetRevision: HEAD
+          destination:
+            server: 'https://kubernetes.default.svc'
+            namespace: default
+          syncPolicy:
+            automated:
+              prune: true
+              selfHeal: true
+        
+        
