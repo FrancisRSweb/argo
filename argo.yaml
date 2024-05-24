@@ -19,7 +19,7 @@ spec:
   template:
     metadata:
       name: app-of-apps
-      namespace: argocd
+      namespace: default
     spec:
       applications:
         - name: app1
