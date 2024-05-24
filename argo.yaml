@@ -17,9 +17,6 @@ spec:
       prune: true
       selfHeal: true
   template:
-    metadata:
-      name: app-of-apps
-      namespace: default
     spec:
       applications:
         - name: app1
